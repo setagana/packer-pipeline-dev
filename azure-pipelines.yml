@@ -16,4 +16,5 @@ jobs:
     inputs:
       targetFiles: '**/ubuntu1604.json'
       actionOnMissing: fail
+  - script: cat ubuntu1604.json
   - script: /usr/local/packer build ubuntu1604.json
